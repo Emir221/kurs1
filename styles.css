@@ -1,0 +1,393 @@
+/* Общий стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Фиксированное меню */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Контент с отступом от меню */
+.container {
+    margin-top: 80px; /* Учитываем высоту фиксированного меню */
+    padding: 20px;
+}
+
+/* Заголовок страницы */
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Контейнер для всех карточек */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Расстояние между карточками */
+}
+
+/* Карточки блюд */
+.dish-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.dish-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.dish-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.dish-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.dish-card button:hover {
+    background-color: #45a049;
+}
+
+/* Таблица на странице склада */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Устанавливаем высоту страницы и flexbox */
+body, html {
+    height: 100%; /* Устанавливаем 100% высоты для страницы */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контейнер для контента и футера */
+.container {
+    flex: 1; /* Контент занимает всё доступное пространство */
+    margin-top: 80px; /* Отступ для меню */
+    padding: 20px;
+}
+
+/* Футер фиксируется внизу */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: auto; /* Автоматический отступ для размещения внизу */
+}
+
+
+
+/* Заголовок страницы */
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Сообщения */
+.message {
+    text-align: center;
+    font-size: 16px;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Навигация */
+.main-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Главный экран */
+.hero-container {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #34994f;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-container .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-container .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .button:hover {
+    background-color: #e64a19;
+}
+
+/* Раздел о нас */
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Раздел популярных блюд */
+.featured-dishes-container {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.dish-cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dish-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.dish-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.dish-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.dish-card .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dish-card .button:hover {
+    background-color: #e64a19;
+}
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
